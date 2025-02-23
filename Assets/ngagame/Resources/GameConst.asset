@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb44069d3c515dd4a80e3d7cd7531a82, type: 3}
+  m_Name: GameConst
+  m_EditorClassIdentifier: 
+  characterLayer: 8
+  attackLayer:
+    serializedVersion: 2
+    m_Bits: 66816
+  invisibleLayer: 13
+  dynamicObjectLayer: 0
+  hitEffect: {fileID: 5271812981831491346, guid: 8113b8baead50d44abdc3c50cb547316, type: 3}
+  handFireEffect: {fileID: 8746162430657879323, guid: deb5852768489fe49a60099636655ac4, type: 3}
+  burningEffect: {fileID: 8620753368538216509, guid: d15db453c986127448442071cd3f8889, type: 3}
+  handTag: Hand
+  increaseHandCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.071428575
+      outSlope: 0.071428575
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.35
+      value: 0.025
+      inSlope: 0.071428575
+      outSlope: 0.52259165
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7
+      value: 1
+      inSlope: 0.14804679
+      outSlope: 0.14804679
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0999439
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -3.3333333
+      outSlope: -3.3333333
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  playerGetUpDelay: 1
+  enemyGetUpDelay: 2
+  forceBackMin: 3500
+  forceBackMax: 20000
+  forceUpMin: 6000
+  forceUpMax: 20000
