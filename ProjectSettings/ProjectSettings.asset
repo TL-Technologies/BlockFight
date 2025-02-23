@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: ngagame
-  productName: Block  Fighting
+  companyName: clash
+  productName: Flappy Fighters
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -179,7 +179,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.ngagame.block.fighting
+    Android: com.clash.flappyfighters
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -187,8 +187,8 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 23
-  AndroidTargetSdkVersion: 0
+  AndroidMinSdkVersion: 29
+  AndroidTargetSdkVersion: 34
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -304,7 +304,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 63175125bf958ef4dbd59e1adf941865, type: 3}
+      m_Icon: {fileID: 2800000, guid: 7f71f24bf457fec42801a7db491de40c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

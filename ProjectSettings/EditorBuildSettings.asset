@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Gameplay/Result/Result.unity
     guid: 70b5e8370e1444a4ba365a3eeeb227a1
   - enabled: 1
-    path: Assets/ngagame/UI/UnlockSkin/RewardSkin.unity
-    guid: 7967084a9b9a2454b807332752f1465c
-  - enabled: 1
     path: Assets/ngagame/UI/UnlockSkin/RewardArena.unity
     guid: 15733b8fa40f00a4d9997d826a517c50
   - enabled: 1
