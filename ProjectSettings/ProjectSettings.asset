@@ -781,7 +781,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: USE_GOOGLE_ADS
+    Android: 
     iPhone: LK_HAS_LION_ANALYTICS;gameanalytics_admob_enabled;gameanalytics_max_enabled
   additionalCompilerArguments: {}
   platformArchitecture: {}
