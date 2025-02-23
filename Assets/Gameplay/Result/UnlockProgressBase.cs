@@ -28,16 +28,7 @@ public abstract class UnlockProgressBase : MonoBehaviour
 		UpdateProgress();
 	}
 
-	public void GetMorePercent()
-	{
-		Ads.Instance.ShowRewardedAd((value) =>
-		{
-			if (value)
-			{
-				UpdateProgress();
-			}
-		}, "more_unlock_percent");
-	}
+
 
 	Tween progressTween = null;
 	void UpdateProgress()

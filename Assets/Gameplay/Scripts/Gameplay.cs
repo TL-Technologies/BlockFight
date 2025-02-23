@@ -108,10 +108,7 @@ public class Gameplay : MonoBehaviour
 		DOVirtual.DelayedCall(3f, delegate
 		{
 			Time.timeScale = 1;
-			Ads.Instance.ShowInterstitial((value) =>
-			{
-				SceneMaster.Instance.OpenScene(SceneID.Result);
-			}, "level_end");
+			SceneMaster.Instance.OpenScene(SceneID.Result);
 		});
 	}
 

@@ -33,15 +33,9 @@ public class RewardSkin : Scene
 
 	public void OnClaimClick()
 	{
-		Ads.Instance.ShowRewardedAd((value) =>
-		{
-			if (value)
-			{
-				OutfitItem.Instance.Unlock(skinInProgress.ToString(), true);
-				OutfitItem.Instance.SuggestItem = skinInProgress.ToString();
-				Close();
-			}
-		}, "progress_skin");
+		OutfitItem.Instance.Unlock(skinInProgress.ToString(), true);
+		OutfitItem.Instance.SuggestItem = skinInProgress.ToString();
+		Close();
 	}
 
 	public void OnSkipClick()

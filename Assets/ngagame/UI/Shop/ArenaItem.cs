@@ -75,6 +75,7 @@ public class ArenaItem : GameItem<ArenaItem>
 
 	public void Play(string arenaName)
 	{
+		Debug.Log("Playing arena: " + arenaName);
 		PlayerPrefs.SetString(ArenaSaveKey.LastArenaKey.ToString(), arenaName);
 		NewestItem = string.Empty;
 	}

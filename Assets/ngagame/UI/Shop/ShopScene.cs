@@ -118,13 +118,7 @@ public class ShopScene : Scene
 
 	public void GetCoin()
 	{
-		Ads.Instance.ShowRewardedAd((value) =>
-		{
-			if(value)
-			{
-				Profile.Instance.Coins += rewardCoinAmount;
-			}
-		}, "coin_in_shop");
+		Profile.Instance.Coins += rewardCoinAmount;
 	}
 
 	public void Close()

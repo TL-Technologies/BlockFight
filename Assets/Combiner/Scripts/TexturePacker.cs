@@ -568,7 +568,7 @@ namespace LunarCatsStudio.SuperCombiner {
 			foreach (KeyValuePair<string, List<Texture2D>> keyValue in _texturesForAtlas) {
 				if (keyValue.Value.Count > 0) {
 					Texture2D packedTexture = new Texture2D (textureAtlasSize, textureAtlasSize, TextureFormat.RGBA32, false);
-					packedTexture.Resize(textureAtlasSize, textureAtlasSize);
+					packedTexture.Reinitialize(textureAtlasSize, textureAtlasSize);
 					Rect[] uvs = packedTexture.PackTextures(keyValue.Value.ToArray(), atlasPadding, textureAtlasSize);
 					_packedTextures.Add (keyValue.Key, packedTexture);
 					if(keyValue.Key.Equals("_MainTex")) {

@@ -53,7 +53,11 @@ public abstract class GameItem<T> : MonoBehaviour where T : MonoBehaviour
 
 				if (data.owned != null && data.owned.Count <= 0 && define.list != null && define.list.Length > 0)
 				{
-					data.owned.Add(define.list[0]);
+					for (int i = 0; i < define.list.Length; i++)
+					{
+						data.owned.Add(define.list[i]);
+					}
+					
 				}
 			}
 

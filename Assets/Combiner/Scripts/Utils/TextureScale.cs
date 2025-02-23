@@ -98,7 +98,7 @@ namespace LunarCatsStudio.SuperCombiner
 				}
 			}
 
-			tex.Resize(newWidth, newHeight);
+			tex.Reinitialize(newWidth, newHeight);
 			tex.SetPixels(_newColors);
 			tex.Apply();
 

@@ -12,13 +12,7 @@ public class GameManager: MonoBehaviour
 
 	public void Init()
 	{
-		Analytics.Instance.Init();
-
 		Initialized = true;
 	}
-
-	private void Start()
-	{
-		Ads.Instance.Init();
-	}
+	
 }

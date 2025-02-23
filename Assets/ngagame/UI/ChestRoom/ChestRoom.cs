@@ -77,7 +77,6 @@ public class ChestRoom : MonoBehaviour
 		}
 
 		RefreshButton();
-		Analytics.Instance.LogEvent("enter_chest_room");
 	}
 
 	public void OnDisable()
@@ -130,13 +129,7 @@ public class ChestRoom : MonoBehaviour
 
 	public void OpenChestByRV(ChestItemView chest)
     {
-		Ads.Instance.ShowRewardedAd((value) =>
-		{
-			if(value)
-            {
-				OpenChestFromUI(chest);
-            }
-		}, "open_chest");
+	    OpenChestFromUI(chest);
     }
 
 	public void OpenChestFromUI(ChestItemView chest)
@@ -190,16 +183,10 @@ public class ChestRoom : MonoBehaviour
 
 	public void GetMoreKey()
 	{
-		Ads.Instance.ShowRewardedAd((value) =>
-		{
-			if(value)
-			{
-				Profile.Instance.KeyAmount += 1;
-				key.color = 0 < Profile.Instance.KeyAmount ? Color.white : new Color(0, 0, 0, 0.2f);
+		Profile.Instance.KeyAmount += 1;
+		key.color = 0 < Profile.Instance.KeyAmount ? Color.white : new Color(0, 0, 0, 0.2f);
 
-				RefreshButton();
-			}
-		}, "more_key");
+		RefreshButton();
 	}
 
 	public void Close()

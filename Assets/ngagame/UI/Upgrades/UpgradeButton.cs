@@ -27,13 +27,7 @@ public class UpgradeButton : MonoBehaviour
     {
         if(rvGroup.gameObject.activeSelf)
         {
-            Ads.Instance.ShowRewardedAd((value) =>
-            {
-                if(value)
-				{
-                    LevelUp();
-                }
-            });
+            LevelUp();
         } else
 		{
             if(Profile.Instance.Coins >= price)

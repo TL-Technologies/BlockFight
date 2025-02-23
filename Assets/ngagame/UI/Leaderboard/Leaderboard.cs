@@ -93,11 +93,6 @@ public class Leaderboard : MonoBehaviour
 
     private void OnEnable()
     {
-        var playerSprite = Resources.Load<Sprite>("flags/" + Ads.UserCountryCode.ToLower());
-        if (playerSprite != null)
-        {
-            playerRankItem.flagImage.sprite = playerSprite;
-        }
     }
 
     public void AllRankUp()
